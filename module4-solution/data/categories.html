@@ -1,0 +1,12 @@
+<ol>
+  <!-- <li ng-repeat="item in $ctrl.items"
+   ui-sref="mainList.itemDetail({itemId:$index})"> -->
+   <li ng-repeat="item in $ctrl.input">
+     <a ui-sref="items({shortName:item.short_name})">
+     Name: {{item.name}}<br>
+     Short Name: {{item.short_name}}
+     </a><br>
+     <span ng-if="item.special_instructions!==''">Special Instructions: {{item.special_instructions}}</span>
+     <hr>
+  </li>
+</ol>

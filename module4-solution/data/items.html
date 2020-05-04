@@ -1,0 +1,14 @@
+Name:{{$ctrl.input.category.name}}<br>
+Short Name:{{$ctrl.input.category.short_name}}<br>
+<span ng-if="$ctrl.input.category.special_instructions!=''">
+  Special Instructions: {{$ctrl.input.category.special_instructions}}
+</span>
+<br>
+<ol>
+  <li ng-repeat="item in $ctrl.input.menu_items">
+  Name: {{item.name}}<br>
+  Short Name:{{item.short_name}}<br>
+  <span ng-if="item.description!=''">Description:{{item.description}}</span>
+    <hr>
+</li>
+</ol>
