@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('data')
+  angular.module('MenuApp')
   .controller('ItemController',ItemController);
   ItemController.$inject=['items'];
   function ItemController(items){
